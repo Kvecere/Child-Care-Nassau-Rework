@@ -1,4 +1,4 @@
-﻿html{
+html{
     background-color: #fff;
     margin: 0;
     padding: 0;
@@ -11,7 +11,6 @@ body{
     line-height: 1.5em;
     margin: 0;
     padding: 0;
-    height: 100%;
 }
 a,.more{
     font-size:100%;
@@ -25,6 +24,7 @@ a:hover{
     color: #ff6600;
 }
 header, footer, hgroup, section{display: block;}
+/*navbar*/
 nav{
     overflow:hidden;
     height:inherit;
@@ -33,11 +33,10 @@ nav{
     text-align: center; 
 }
 nav .nav-dropdown, #donate-nav-button{
-    float:left;
+    float:right;
     overflow:hidden;
     position:inherit;
     display:block;
-    float: left;
     width:200px;
     background-color: #003F7E;
     margin: 0px;
@@ -45,10 +44,11 @@ nav .nav-dropdown, #donate-nav-button{
 }
 .nav-dropdown>i{
     width:39px;
+    height:22px;
     float:right;
     display:inline-block;
     color:white;
-    padding-top:29.5px;
+    padding:29.5px 0;
     font-size:18px;
     border-right:1px solid #0A6CB1;
 }
@@ -69,17 +69,16 @@ header nav ul {
     padding:0px;
     margin:0px;
 }
-ul li>a{
+ul li.nav-dropdown>a{
     margin:0px;
-    height:0px;
+    height:80px;
     color: #fff;
     display:block;
-    width:inherit;
+    width:160px;
     text-decoration: none;
 }
-ul li#donate-nav-button{
-    background-color:#f60;
-}
+ul li#donate-nav-button{background-color:#f60;}
+
 #donate-nav-button a{
     color:white;
     width:200px;
@@ -111,7 +110,7 @@ ul li:hover a{
     text-align:left;
     text-decoration: none;
 }
-.nav-dropdown:hover{/*hover over main nav, affect main nav*/
+.nav-dropdown:hover,{/*hover over main nav, affect main nav*/
     background-color:#0A6CB1;
     transition:background-color 0.2s;
 }
@@ -122,15 +121,42 @@ ul li:hover a{
     background-color:#0A6CB1;
     transition:background-color 0.2s;
 }
-.nav-dropdown:hover .nav-subcategory a:hover{/*hover over main nav, affect dropdown menu items when hovered over*/
+.nav-dropdown:hover .nav-subcategory a:hover,.nav-dropdown:hover .nav-subcategory i:hover,.nav-dropdown:hover .nav-subcategory li:hover{/*hover over main nav, affect dropdown menu items when hovered over*/
     background-color:#0A6CB1;
     color:white;
     transition:background-color 0.2s;
     transition:color 0.2s;
 }
 
-
-
+.nav-subcategory>li>a{
+    width:184px;
+    margin:0;
+    display:inline-block;
+}
+.nav-subcategory>li>a.nav-sub-subcategory{width:144px;}
+.nav-subcategory>li>i.nav-sub-subcategory{
+    margin:0;
+    width:40px;
+    float:right;
+    display:inline-block;
+    background-color:white;
+    height:66px;
+    line-height: 66px;
+}
+.nav-subcategory>li>i.nav-dropdown{
+    margin:0;
+    box-shadow:none;
+    width:40px;
+    background-color:white;
+    float:right;
+    display:inline-block;
+    height:66px;
+    line-height:66px;
+}
+#nav-singleline{/*for sub-subcategories where the parent li takes up 1 lines instead of 2.*/
+    height:45px;
+    line-height:45px;
+}
 
 .float-left{float: left;}
 .float-right{float: right;}
@@ -167,6 +193,38 @@ h5 a:link, h5 a:visited, h5 a:active{
     text-decoration: none;
 }
 
+
+
+div#hero{
+    height:750px;
+    width:100%;
+    background-image:url(https://images.pexels.com/photos/160688/family-toddler-hapy-happy-160688.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=1080&w=1920);
+    background-attachment:fixed;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    padding-top:81px;
+    text-align:center;
+}
+#vision-statement{
+    width:40%;
+    min-height:75px;
+    background-color:rgba(245,245,245,0.85) ;
+    display:inline-block;
+    text-align:center;
+    border-radius:4px;
+    margin-top:575px;
+}
+#mission-statement{
+    background-color:#0A6CB1;
+    padding:40px 10%;
+}
+#mission-statement h3, #mission-statement p{
+    color:white;
+    text-align:center;
+}
+
+
 /* main layout
 ----------------------------------------------------------*/
 
@@ -176,7 +234,7 @@ h5 a:link, h5 a:visited, h5 a:active{
     clear: both;
     min-height: 30%;
     vertical-align: top;
-    padding-top: 80px;
+    padding-top: 20px;
     padding-bottom: 20px;
     padding-left:5%;
     padding-right:5%;
@@ -200,7 +258,6 @@ header{margin: 0 0 0 0;
     border-bottom:1px solid #0A6CB1;
     position:absolute;
     top:0;
-    z-index:999;
 }
 header .content-wrapper{
     margin-top: 0px;
@@ -420,13 +477,22 @@ a.return:hover{
     outline: inline solid 1px; 
     border: solid 1px black;    
 }
+.sponsors{
+    min-height: 384px;
+}
+.sponsors .sponsor-tile{
+    width:20%;
+    padding-bottom:20%;
+    height:0;
+    background-color:aquablue;
+}
 footer{
     display: block;
     clear: both;
     color: #fff;
     font-size: 0.9em;
     text-align: center;
-    padding: 10px 10px 10px 10px;
+    padding: 0px;
 }
 footer .content-wrapper{
     background-color: #0961B1;
@@ -445,10 +511,6 @@ footer a.footer:hover{
     background-color: #0961B1;
     color: #ff6600;
     text-decoration: underline;
-}
-footer .content-wrapper{
-    background-color: #0961B1;
-    min-height: 300px;
 }
 footer .content-pod{
     clear:both;
@@ -585,28 +647,41 @@ footer .copyright{
 section.feature{
     float: left;
     display:block;
-    width: 23% !important;
-    padding: 5px;
-    margin-top: 15px;
+    padding:0 0 20px 0px;
+    height:300px;
+    width:100%;
 }
 h4.title{
     color: #0961B1;
     font-weight: bold;
     text-align: center;
+    display:inline-block;
+    margin:auto;
+    padding-right:40px;
 }
-section.feature .feature-text{height: 255px !important;}
+section.feature .feature-text{
+    height: 300px;
+    width:65%;
+    display:inline-block;
+    border-right:1px solid lightgray;
+}
 section.feature img{
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left:80px;
+    padding:92px 60px 91px 25px;
+    vertical-align:middle;
 }
-.feature p{font-size: 0.85em;}
+.feature p{
+    display:inline-block;
+    width:calc(95% - 203px - 126px);
+    height:auto;
+    margin:0px;
+    vertical-align:middle;
+}
 section.feature br{
     clear:both;
     line-height:10px;
 }
-section.feature .donate-now{
+/*section.feature .donate-now{
     font-size: 0.85em;
     font-weight: bold;
     margin-top: 20px;
@@ -622,14 +697,53 @@ section.feature .donate-now{
     vertical-align: middle !important;
     text-align: center;
     word-wrap:break-word;
+}*/
+section.feature .feature-useful-links{
+    margin:0;
+    padding:0;
+    border-bottom:1px solid lightgray;
+    font-size: 13px;
+    font-weight: bold;
+    width: calc(35% - 1px);
+    height: 300px;
+    float:right;
+    text-align: center;
+    display:inline-block;
+    word-wrap:break-word;
 }
-section.feature .find-child-care{
+section.feature .feature-useful-links ul{
+    padding:0;
+    margin:0;
+}
+section.feature .feature-useful-link-item{
+    height:59px;
+    border-top:1px solid lightgray;
+    background-color:#f2f2f2;
+    text-decoration:none;
+    list-style-type:none;
+}
+
+.feature-useful-link-item a{
+    color:black;
+    text-decoration:none;
+    list-style-type:none;
+    display:block;
+    height:46px;
+    padding:4px;
+    line-height: 46px;
+    text-align:left;
+}
+.feature-useful-link-item a:hover{
+    background-color:lightgray;
+    transition:0.2s ;
+}
+/*section.feature .register{
     font-size: 0.85em;
     font-weight: bold;
     margin-top: 20px;
     border: 1px solid #c8c8c8;
-    border-radius: 6px;
     background-color: #f5f5f5;
+    border-radius: 6px;
     width: 90%;
     max-width:100%;
     height: 100px !important;
@@ -638,23 +752,7 @@ section.feature .find-child-care{
     vertical-align: middle !important;
     text-align: center;
     word-wrap:break-word;
-}
-section.feature .register{
-    font-size: 0.85em;
-    font-weight: bold;
-    margin-top: 20px;
-    border: 1px solid #c8c8c8;
-    background-color: #f5f5f5;
-    border-radius: 6px;
-    width: 90%;
-    max-width:100%;
-    height: 100px !important;
-    float: left;
-    padding: 5px;
-    vertical-align: middle !important;
-    text-align: center;
-    word-wrap:break-word;
-}
+}*/
 section.feature .twitter-feed{
     font-size: 0.85em;
     font-weight: bold;
