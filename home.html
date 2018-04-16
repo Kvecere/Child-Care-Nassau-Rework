@@ -37,7 +37,7 @@
 		<script src="./home_files/respond.min.js" type="text/javascript"></script>
 <!-- 		<script src="./home_files/jquery.flexnav.js" type="text/javascript"></script> -->
 		<script src="./home_files/jquery.hoverIntent.minified.js" type="text/javascript"></script>
-		<script src="./home_files/jquery.eislideshow.js" type="text/javascript"></script>
+<!-- 		<script src="./home_files/jquery.eislideshow.js" type="text/javascript"></script> -->
 		<script src="./home_files/jquery.easing.1.3.js" type="text/javascript"></script>
 		<script src="./home_files/utilities.js" type="text/javascript"></script>
 		<script type="text/javascript">
@@ -76,8 +76,9 @@
 		<script type="text/javascript" charset="UTF-8" src="./home_files/main.js"></script>
 		<script type="text/javascript" charset="UTF-8" src="./home_files/element_main.js"></script>
 		<script type="text/javascript" charset="utf-8" async="" src="./home_files/timeline.f3704eb7aa37eaac805e4960db90c894.js"></script>
+		<script type="text/javascript" src="./home_files/site.js"></script>
 	</head>
-	<body style="position: relative; min-height: 100%; top: 0px;">
+	<body>
 		<header>       
 			<div class="content-wrapper">
 				<div class="logo">
@@ -94,36 +95,35 @@
 			</div>
 			<nav>
 				<ul>
-					<li class="nav-dropdown"><a href="http://www.childcarenassau.org/about-us.aspx">About Us</a>
+					<li class="nav-dropdown" id="more" style="display:none;"><a>More</a><i class="nav-dropdown fa fa-caret-down"></i>
+					<li class="nav-dropdown" id="donate-nav-button"><a href="http://www.childcarenassau.org/donate-now">Donate Now</a>
+					<li class="nav-dropdown"><a href="http://www.childcarenassau.org/action-center.aspx">Action Center</a><i class="nav-dropdown fa fa-caret-down"></i>
 						<ul class="nav-subcategory">
-							<li><a href="http://www.childcarenassau.org/annual-report.aspx">Annual Report</a></li>
-							<li><a href="http://www.childcarenassau.org/contact-us.aspx">Contact Us</a></li>
-							<li><a href="http://www.childcarenassau.org/job-opportunities.aspx">Job Opportunities</a></li>
-							<li><a href="http://www.childcarenassau.org/frequently-asked-questions.aspx">Frequently Asked Questions</a></li>
+							<li><a href="http://www.childcarenassau.org/great-nonprofits2.aspx">Great Nonprofits</a></li>
+							<li><a href="http://www.childcarenassau.org/amazon-smile2.aspx">Amazon Smile</a></li>
+							<li><a href="http://www.childcarenassau.org/community-outreach.aspx">Community Outreach</a></li>
+							<li><a href="http://www.childcarenassau.org/public-policy--advocacy.aspx">Public Policy &amp; Advocacy</a></li>
+							<li><a href="http://www.childcarenassau.org/action-center--resources.aspx">Action Center &amp; Resources</a></li>
+							<li><a href="http://www.childcarenassau.org/data--research.aspx">Data &amp; Research</a></li>
 						</ul>
-						<i class="nav-dropdown fa fa-caret-down"></i>
 					</li>
-					<li class="nav-dropdown"><a href="http://www.childcarenassau.org/for-families.aspx">For Families</a><i class="nav-dropdown fa fa-caret-down"></i>
+					<li class="nav-dropdown"><a href="http://www.childcarenassau.org/news-events.aspx">News &amp; Events</a><i class="nav-dropdown fa fa-caret-down"></i>
 						<ul class="nav-subcategory">
-							<li><a href="http://www.childcarenassau.org/resource--referral-services.aspx">Resource &amp; Referral Services</a></li>
-							<li class="item-with-ul"><a href="http://www.childcarenassau.org/types-of-child-care.aspx">Types of Child Care</a>
-							<ul style="display: none;">
-									<li><a href="http://www.childcarenassau.org/familygroup-family-child-care-checklist.aspx">Family/Group Family Child Care Checklist</a></li>
-								</ul>
-							</li>
-							<li class="item-with-ul"><a href="http://www.childcarenassau.org/finding-and-choosing-child-care.aspx">Finding and Choosing Child Care</a>
-								<ul style="display: none;">
-									<li><a href="https://ssl.secureacc.com/childcarenassau/default.aspx?PageID=RequestForm">Find Child Care: Request Form</a></li>
-									<li><a href="http://www.childcarenassau.org/considerations-in-finding-quality-child-care.aspx">Considerations in Finding Quality Child Care</a></li>
-									<li><a href="http://www.childcarenassau.org/visiting-and-evaluating-programs2.aspx">Visiting and Evaluating Programs</a></li>
-									<li><a href="http://www.childcarenassau.org/child-care-checklist.aspx">Child Care Checklist</a></li>
-								</ul>
-							</li>
-							<li><a href="http://www.childcarenassau.org/financial-information.aspx">Financial Information</a></li>
-							<li><a href="http://www.childcarenassau.org/workshops-for-parents.aspx">Workshops for Parents</a></li>
-							<li><a href="http://www.childcarenassau.org/parent-resources.aspx">Parent Resources</a></li>
-							<li><a href="http://www.childcarenassau.org/nationally-accredited-child-care-programs-.aspx">Nationally Accredited Child Care Programs </a></li>
-							<li><a href="http://www.childcarenassau.org/nutrition-information-for-parents.aspx">Nutrition Information for Parents</a></li>
+							<li><a href="http://www.childcarenassau.org/updates-and-alerts.aspx">Upcoming Events</a></li>
+							<li><a href="http://www.childcarenassau.org/special-events.aspx">Past Events</a></li>
+							<li><a href="http://www.childcarenassau.org/newsroom.aspx">Newsroom</a></li>
+							<li><a href="http://www.childcarenassau.org/e-newsletters-registration.aspx">E-Newsletters Registration</a></li>
+							<li><a href="http://www.childcarenassau.org/photo-gallery-2.aspx">Photo Gallery</a></li>
+						</ul>
+					</li>
+					<li class="nav-dropdown"><a href="http://www.childcarenassau.org/for-employers.aspx">For Employers</a><i class="nav-dropdown fa fa-caret-down"></i>
+						<ul class="nav-subcategory">
+							<li><a href="http://www.childcarenassau.org/for-employers2.aspx">For Employers</a></li>
+							<li><a href="http://www.childcarenassau.org/worksite-needs-assessments.aspx">Worksite Needs Assessments</a></li>
+							<li><a href="http://www.childcarenassau.org/enhanced-resource-and-referral-services.aspx">Enhanced Resource and Referral Services</a></li>
+							<li><a href="http://www.childcarenassau.org/development-of-an-onnear-site-child-care-center.aspx">Development of an On/Near Site Child Care Center</a></li>
+							<li><a href="http://www.childcarenassau.org/worksite-seminars.aspx">Worksite Seminars</a></li>
+							<li><a href="http://www.childcarenassau.org/dependent-care-assistance-plans.aspx">Dependent Care Assistance Plans</a></li>
 						</ul>
 					</li>
 					<li class="nav-dropdown"><a href="http://www.childcarenassau.org/for-professionals.aspx">For Professionals</a><i class="nav-dropdown fa fa-caret-down"></i>
@@ -136,7 +136,7 @@
 							<li><a href="http://www.childcarenassau.org/long-island-infant-toddler-resource-center.aspx">Long Island Infant Toddler Resource Center</a></li>
 							<li><a href="http://www.childcarenassau.org/new-job-bank.aspx">NEW Job Bank</a></li>
 							<li><a href="http://www.childcarenassau.org/opening-a-child-care-program.aspx">Opening A Child Care Program</a></li>
-							<li><a href="http://www.childcarenassau.org/professional-development.aspx">Professional Development</a>
+							<li><a class="nav-sub-subcategory" href="http://www.childcarenassau.org/professional-development.aspx">Professional Development</a><i class="nav-sub-subcategory fa fa-caret-down"></i>
 								<ul style="display: none;">
 									<li><a href="http://www.childcarenassau.org/training-workshops--seminars.aspx">Training Workshops &amp; Seminars</a></li>
 									<li><a href="http://www.childcarenassau.org/suny-videoconferences.aspx">SUNY Videoconferences</a></li>
@@ -152,227 +152,150 @@
 							<li><a href="http://www.childcarenassau.org/update-your-profile.aspx">Update Your Profile</a></li>
 						</ul>
 					</li>
-					<li class="nav-dropdown">
-						<a href="http://www.childcarenassau.org/for-employers.aspx">For Employers</a><i class="nav-dropdown fa fa-caret-down"></i>
+					<li class="nav-dropdown"><a href="http://www.childcarenassau.org/for-families.aspx">For Families</a><i class="nav-dropdown fa fa-caret-down"></i>
 						<ul class="nav-subcategory">
-							<li><a href="http://www.childcarenassau.org/for-employers2.aspx">For Employers</a></li>
-							<li><a href="http://www.childcarenassau.org/worksite-needs-assessments.aspx">Worksite Needs Assessments</a></li>
-							<li><a href="http://www.childcarenassau.org/enhanced-resource-and-referral-services.aspx">Enhanced Resource and Referral Services</a></li>
-							<li><a href="http://www.childcarenassau.org/development-of-an-onnear-site-child-care-center.aspx">Development of an On/Near Site Child Care Center</a></li>
-							<li><a href="http://www.childcarenassau.org/worksite-seminars.aspx">Worksite Seminars</a></li>
-							<li><a href="http://www.childcarenassau.org/dependent-care-assistance-plans.aspx">Dependent Care Assistance Plans</a></li>
+							<li><a href="http://www.childcarenassau.org/resource--referral-services.aspx">Resource &amp; Referral Services</a></li>
+							<li class="item-with-ul">
+								<a class="nav-sub-subcategory" href="http://www.childcarenassau.org/types-of-child-care.aspx">Types of Child Care</a>
+								<i class="nav-sub-subcategory fa fa-caret-down" id="nav-singleline"></i>
+								<ul style="display: none;">
+									<li><a href="http://www.childcarenassau.org/familygroup-family-child-care-checklist.aspx">Family/Group Family Child Care Checklist</a></li>
+								</ul>
+							</li>
+							<li class="item-with-ul">
+								<a class="nav-sub-subcategory" href="http://www.childcarenassau.org/finding-and-choosing-child-care.aspx">Finding and Choosing Child Care</a>
+								<i class="nav-sub-subcategory fa fa-caret-down"></i>
+								<ul style="display: none;">
+									<li><a href="https://ssl.secureacc.com/childcarenassau/default.aspx?PageID=RequestForm">Find Child Care: Request Form</a></li>
+									<li><a href="http://www.childcarenassau.org/considerations-in-finding-quality-child-care.aspx">Considerations in Finding Quality Child Care</a></li>
+									<li><a href="http://www.childcarenassau.org/visiting-and-evaluating-programs2.aspx">Visiting and Evaluating Programs</a></li>
+									<li><a href="http://www.childcarenassau.org/child-care-checklist.aspx">Child Care Checklist</a></li>
+								</ul>
+							</li>
+							<li><a href="http://www.childcarenassau.org/financial-information.aspx">Financial Information</a></li>
+							<li><a href="http://www.childcarenassau.org/workshops-for-parents.aspx">Workshops for Parents</a></li>
+							<li><a href="http://www.childcarenassau.org/parent-resources.aspx">Parent Resources</a></li>
+							<li><a href="http://www.childcarenassau.org/nationally-accredited-child-care-programs-.aspx">Nationally Accredited Child Care Programs </a></li>
+							<li><a href="http://www.childcarenassau.org/nutrition-information-for-parents.aspx">Nutrition Information for Parents</a></li>
 						</ul>
 					</li>
-					<li class="nav-dropdown"><a href="http://www.childcarenassau.org/news-events.aspx">News &amp; Events</a><i class="nav-dropdown fa fa-caret-down"></i>
+					<li class="nav-dropdown"><a href="http://www.childcarenassau.org/about-us.aspx">About Us</a>
 						<ul class="nav-subcategory">
-							<li><a href="http://www.childcarenassau.org/updates-and-alerts.aspx">Upcoming Events</a></li>
-							<li><a href="http://www.childcarenassau.org/special-events.aspx">Past Events</a></li>
-							<li><a href="http://www.childcarenassau.org/newsroom.aspx">Newsroom</a></li>
-							<li><a href="http://www.childcarenassau.org/e-newsletters-registration.aspx">E-Newsletters Registration</a></li>
-							<li><a href="http://www.childcarenassau.org/photo-gallery-2.aspx">Photo Gallery</a></li>
+							<li><a href="http://www.childcarenassau.org/annual-report.aspx">Annual Report</a></li>
+							<li><a href="http://www.childcarenassau.org/contact-us.aspx">Contact Us</a></li>
+							<li><a href="http://www.childcarenassau.org/job-opportunities.aspx">Job Opportunities</a></li>
+							<li><a href="http://www.childcarenassau.org/frequently-asked-questions.aspx">Frequently Asked Questions</a></li>
 						</ul>
-					</li>
-					<li class="nav-dropdown"><a href="http://www.childcarenassau.org/action-center.aspx">Action Center</a><i class="nav-dropdown fa fa-caret-down"></i>
-						<ul class="nav-subcategory">
-							<li><a href="http://www.childcarenassau.org/great-nonprofits2.aspx">Great Nonprofits</a></li>
-							<li><a href="http://www.childcarenassau.org/amazon-smile2.aspx">Amazon Smile</a></li>
-							<li><a href="http://www.childcarenassau.org/community-outreach.aspx">Community Outreach</a></li>
-							<li><a href="http://www.childcarenassau.org/public-policy--advocacy.aspx">Public Policy &amp; Advocacy</a></li>
-							<li><a href="http://www.childcarenassau.org/action-center--resources.aspx">Action Center &amp; Resources</a></li>
-							<li><a href="http://www.childcarenassau.org/data--research.aspx">Data &amp; Research</a></li>
-						</ul>
-					</li>
-					<li class="nav-dropdown" id="donate-nav-button"><a href="http://www.childcarenassau.org/donate-now">Donate Now</a>
-					<li class="nav-dropdown" id="more">More</a><i class="nav-dropdown fa fa-caret-down"></i>
+						<i class="nav-dropdown fa fa-caret-down"></i>
+					</li>	
 				</ul>
 			</nav>
 		</header>
-		<div id="ei-slider" class="ei-slider">
-			<div class="ei-slider-loading" style="display: none;">Loading</div>
-			<div class=ei-slider-side>
-				<a href="a href="http://www.childcarenassau.org/#"><i class="slide fa fa-angle-left"></i></a>
-			</div>
-			<ul class="ei-slider-large">
-				<li style="opacity: 0; z-index: 1;">
-					<a href="http://www.childcarenassau.org/Friends--Family-Fun-Night.aspx">
-						<img src="./home_files/Photo377original.jpg" alt="" style="width: 1170px; height: 400px;">
-					</a>
-					<div class="ei-title">
-						<h2 style="opacity: 0; display: block; margin-right: 0px;"></h2>
-						<h3 style="opacity: 0; display: block; margin-right: 0px;">
-							<a href="http://www.childcarenassau.org/Friends--Family-Fun-Night.aspx">View More</a>
-						</h3>
-					</div>
-				</li>
-				<li style="opacity: 0; z-index: 1;">
-					<a href="http://www.childcarenassau.org/For-Families.aspx">
-						<img src="./home_files/Photo63original.jpg" alt="" style="width: 1170px; height: 400px;">
-					</a>
-					<div class="ei-title">
-						<h2 style="opacity: 0; margin-right: 0px; display: block;"></h2>
-						<h3 style="opacity: 0; margin-right: 0px; display: block;">
-							<a href="http://www.childcarenassau.org/For-Families.aspx">View More</a>
-						</h3>
-					</div>
-				</li>
-				<li style="opacity: 0; z-index: 1;">
-					<a href="http://www.childcarenassau.org/Registration2.aspx">
-						<img src="./home_files/Photo51original.jpg" alt="" style="width: 1170px; height: 400px;">
-					</a>
-					<div class="ei-title">
-						<h2 style="opacity: 0; margin-right: 0px; display: block;"></h2>
-						<h3 style="opacity: 0; margin-right: 0px; display: block;">
-							<a href="http://www.childcarenassau.org/Registration2.aspx">View Training Opportunities Here!</a>
-						</h3>
-					</div>
-				</li>
-				<li style="opacity: 0; z-index: 1;">
-					<a href="http://www.childcarenassau.org/Child--Adult-Care-Food-Program-(CACFP).aspx">
-						<img src="./home_files/Photo295original.jpg" alt="" style="width: 1170px; height: 400px;">
-					</a>
-					<div class="ei-title">
-						<h2 style="opacity: 0; margin-right: 0px; display: block;"></h2>
-						<h3 style="opacity: 0; margin-right: 0px; display: block;">
-							<a href="http://www.childcarenassau.org/Child--Adult-Care-Food-Program-(CACFP).aspx">View More</a>
-						</h3>
-					</div>
-				</li>
-				<li style="opacity: 0; z-index: 1;">
-					<a href="http://www.childcarenassau.org/For-Employers.aspx">
-						<img src="./home_files/Photo55original.jpg" alt="" style="width: 1170px; height: 400px;">
-					</a>
-					<div class="ei-title">
-						<h2 style="opacity: 0; margin-right: 0px; display: block;"></h2>
-						<h3 style="opacity: 0; margin-right: 0px; display: block;">
-							<a href="http://www.childcarenassau.org/For-Employers.aspx">View More</a>
-						</h3>
-					</div>
-				</li>
-				<li style="opacity: 1; z-index: 10;">
-					<a href="http://www.childcarenassau.org/videos.aspx">
-						<img src="./home_files/Photo71original.jpg" alt="" style="width: 1170px; height: 400px;">
-					</a>
-					<div class="ei-title">
-						<h2 style="opacity: 1; margin-right: 0px; display: block;"></h2>
-						<h3 style="opacity: 1; margin-right: 0px; display: block;">
-							<a href="http://www.childcarenassau.org/action-center.aspx">View More</a>
-						</h3>
-					</div>
-				</li>
-				<li style="opacity: 0; z-index: 1;">
-					<a href="http://www.childcarenassau.org/News-Events.aspx">
-						<img src="./home_files/Photo292original.jpg" alt="" style="width: 1170px; height: 400px;">
-					</a>
-					<div class="ei-title">
-						<h2 style="opacity: 0; margin-right: 0px; display: block;"></h2>
-						<h3 style="opacity: 0; margin-right: 0px; display: block;">
-							<a href="http://www.childcarenassau.org/News-Events.aspx">View More</a>
-						</h3>
-					</div>
-				</li>
-			</ul>
-			<div class=ei-slider-side>
-				<a href="a href="http://www.childcarenassau.org/#"><i class="slide fa fa-angle-right"></i></a>
-			</div>
-			<ul class="ei-slider-thumbs" style="display: block; max-width: 1050px;">
-				<li class="ei-slider-element" style="max-width: 150px; width: 14.2857%; left: 750px;">Current</li>
-				<li style="max-width: 150px; width: 14.2857%;">
-					<a href="http://www.childcarenassau.org/#"></a>
-					<img src="./home_files/Photo377thumbnail.jpg" alt="">
-				</li>
-				<li style="max-width: 150px; width: 14.2857%;">
-					<a href="http://www.childcarenassau.org/#"></a>
-					<img src="./home_files/Photo63thumbnail.jpg" alt="">
-				</li>
-				<li style="max-width: 150px; width: 14.2857%;">
-					<a href="http://www.childcarenassau.org/#"></a>
-					<img src="./home_files/Photo51thumbnail.jpg" alt="">
-				</li>
-				<li style="max-width: 150px; width: 14.2857%;">
-					<a href="http://www.childcarenassau.org/#"></a>
-					<img src="./home_files/Photo295thumbnail.jpg" alt="">
-				</li>
-				<li style="max-width: 150px; width: 14.2857%;">
-					<a href="http://www.childcarenassau.org/#"></a>
-					<img src="./home_files/Photo55thumbnail.jpg" alt="">
-				</li>
-				<li style="max-width: 150px; width: 14.2857%;">
-					<a href="http://www.childcarenassau.org/#"></a>
-					<img src="./home_files/Photo71thumbnail.jpg" alt="">
-				</li>
-				<li style="max-width: 150px; width: 14.2857%;">
-					<a href="http://www.childcarenassau.org/#"></a>
-					<img src="./home_files/Photo292thumbnail.jpg" alt="">
-				</li>
-			</ul>
-		</div>
-		<br><br>
-		<div id="body">
-				
-				<div class="home-wrapper">
-					<section class="feature">
-						<div class="feature-text">
-							<img src="./home_files/for-families.png" alt="for families">
-							<h4 class="title">For Families</h4>
-							<p>
-								<span style="font-size: 14px;">Let our Parent Services Counselors help you find the child care program that best meets your family's needs. <a href="http://www.childcarenassau.org/For-Families.aspx" title="search for child care providers">Learn more</a>...</span>
-							</p>
-						</div>
-						<div class="find-child-care">
-							<br>Find Child Care Now<br>
-							<form id="find-child-care-form" action="http://www.childcarenassau.org/Finding-and-Choosing-Child-Care.aspx" style="padding-top:10px">
-								<button type="submit" class="btn-login" title="Search for a child care provider">Search</button>
-							</form>
-						</div>
-					</section>
-					<section class="feature">
-						<div class="feature-text">
-							<img src="./home_files/for-professionals.png" alt="for professionals">
-							<h4 class="title">For Professionals</h4>
-							<p>
-								<span style="font-size: 14px;">The Early Childhood Services Department offers professional development and educational options.&nbsp;<a href="http://www.childcarenassau.org/For-Professionals.aspx" title="see the services we offer">Learn more</a>...</span>
-							</p>
-						</div>
-						<div class="register">
-							Professionals Login<br>
-							Not a member? Register here!<br>
-							<div style="display:block; padding-top:10px;">
-								<a href="https://ssl.secureacc.com/childcarenassau/default.aspx?PageID=Login" class="btn" title="Member Login">&nbsp;&nbsp;Login&nbsp;&nbsp;</a>
-								<a href="https://ssl.secureacc.com/childcarenassau/default.aspx?PageID=Registration" class="btn" title="New Member Registration">Register</a>
-							</div>
-						</div>
-					</section>
-					<section class="feature">
-						<div class="feature-text">
-							<div class="center"><img src="./home_files/for-communities.png" alt="for communities"></div>
-							<h4 class="title">For Employers</h4>
-							<p>
-							   <span style="font-size: 14px;">Child Care Council of Nassau has a wide range of options for family friendly employers. &nbsp;<a href="http://www.childcarenassau.org/For-Employers.aspx" title="get involved with our community outreach groups and more">Learn more</a>...</span>
-							</p>
-						</div>
-						<div class="donate-now">
-							<br><br>Support the Child Care Council!<br><br>
-							<form id="donate-now-form" action="http://www.childcarenassau.org/Make-a-Donation.aspx" style="padding-top:0px">
-								<button type="submit" class="btn-login" title="Donate">Donate Now</button>
-							</form><br>
-						</div>
-					</section>
-					<section class="feature">
-						<div class="twitter-feed">
-							<a class="twitter-timeline" href="https://twitter.com/ChildCareNassau?ref_src=twsrc%5Etfw" data-width="450"
-	  data-height="675" data-link-color="#0A6CB1" data-border-color="#0A6CB1" data-chrome="nofooter">Tweets by ChildCareNassau</a>
-							<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-						</div>
-					</section>
+		<div id="hero">
+			<div id="vision-statement">
+				<p>Our vision is for all families living and/or working in Nassau County to have access to quality child care and early learning that fosters successful growth and development for every child.</p>
+				<div id="hero-button">
+					<a href="http://www.childcarenassau.org/about-us.aspx">Learn More</a>
 				</div>
 			</div>
+
+		</div>
+		<div id="mission-statement">
+			<h3>About Child Care Council of Nassau</h3>
+				<p>As a Child Care Aware of America Quality Assured leading resource on child care and early learning experiences in Nassau County, the Council informs families about child care choices, indicators of quality and financial options. We support the child care workforce through programmatic enhancements (education, health, safety and nutrition) and business development. We also advocate for public policy changes that support families, the growth and development of children and the sustainability of the child care workforce. Further, we are proud to be partnered with community leaders, employers, public agencies and organizations to efficiently respond to and further develop the child care system.</p>
+			</div>	
+			<div class="home-wrapper" style="overflow:auto;">
+				<section class="feature">
+					<div class="feature-text">
+						<img src="./home_files/for-families.png" alt="for families">
+						<h4 class="title">For Families</h4>
+						<p>
+							Let our Parent Services Counselors help you find the child care program that best meets your family's needs. <a href="http://www.childcarenassau.org/For-Families.aspx" title="search for child care providers">Learn more</a>...
+						</p>
+					</div>
+					<!-- <br>Find Child Care Now<br>
+					<form id="find-child-care-form" action="http://www.childcarenassau.org/Finding-and-Choosing-Child-Care.aspx" style="padding-top:10px">
+						<button type="submit" class="btn-login" title="Search for a child care provider">Search</button>
+					</form> -->
+					<div class=feature-useful-links>
+						<ul>
+							<li class="feature-useful-link-item"><a>Insert useful link here</a></li>
+							<li class="feature-useful-link-item"><a>Insert useful link here</a></li>
+							<li class="feature-useful-link-item"><a>Insert useful link here</a></li>
+							<li class="feature-useful-link-item"><a>Insert useful link here</a></li>
+							<li class="feature-useful-link-item"><a>Insert useful link here</a></li>
+						</ul>
+					</div>
+				</section>
+				<section class="feature">
+					<div class="feature-text">
+						<img src="./home_files/for-professionals.png" alt="for professionals">
+						<h4 class="title">For Professionals</h4>
+						<p>
+							<span style="font-size: 14px;">The Early Childhood Services Department offers professional development and educational options.&nbsp;<a href="http://www.childcarenassau.org/For-Professionals.aspx" title="see the services we offer">Learn more</a>...</span>
+						</p>
+					</div>
+					<!-- Professionals Login<br>
+					Not a member? Register here!<br>
+					<div style="display:block; padding-top:10px;">
+						<a href="https://ssl.secureacc.com/childcarenassau/default.aspx?PageID=Login" class="btn" title="Member Login">&nbsp;&nbsp;Login&nbsp;&nbsp;</a>
+						<a href="https://ssl.secureacc.com/childcarenassau/default.aspx?PageID=Registration" class="btn" title="New Member Registration">Register</a>
+					</div> -->
+					<div class=feature-useful-links>
+						<ul>
+							<li class="feature-useful-link-item"><a>Insert useful link here</a></li>
+							<li class="feature-useful-link-item"><a>Insert useful link here</a></li>
+							<li class="feature-useful-link-item"><a>Insert useful link here</a></li>
+							<li class="feature-useful-link-item"><a>Insert useful link here</a></li>
+							<li class="feature-useful-link-item"><a>Insert useful link here</a></li>
+						</ul>
+					</div>
+				</section>
+				<section class="feature">
+					<div class="feature-text">
+						<img src="./home_files/for-communities.png" alt="for communities">
+						<h4 class="title">For Employers</h4>
+						<p>
+						   <span style="font-size: 14px;">Child Care Council of Nassau has a wide range of options for family friendly employers. &nbsp;<a href="http://www.childcarenassau.org/For-Employers.aspx" title="get involved with our community outreach groups and more">Learn more</a>...</span>
+						</p>
+					</div>
+					<!-- <br><br>Support the Child Care Council!<br><br>
+					<form id="donate-now-form" action="http://www.childcarenassau.org/Make-a-Donation.aspx" style="padding-top:0px">
+						<button type="submit" class="btn-login" title="Donate">Donate Now</button>
+					</form><br>
+					</div> -->
+					<div class=feature-useful-links>
+						<ul>
+							<li class="feature-useful-link-item"><a>Insert useful link here</a></li>
+							<li class="feature-useful-link-item"><a>Insert useful link here</a></li>
+							<li class="feature-useful-link-item"><a>Insert useful link here</a></li>
+							<li class="feature-useful-link-item"><a>Insert useful link here</a></li>
+							<li class="feature-useful-link-item"><a>Insert useful link here</a></li>
+						</ul>
+					</div>
+				</section>
+				<!-- <section class="feature">
+					<div class="twitter-feed">
+						<a class="twitter-timeline" href="https://twitter.com/ChildCareNassau?ref_src=twsrc%5Etfw" data-width="450"
+  data-height="675" data-link-color="#0A6CB1" data-border-color="#0A6CB1" data-chrome="nofooter">Tweets by ChildCareNassau</a>
+						<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+					</div>
+				</section> -->
+			</div>
+		</div>
+		<div class="sponsors">
+			<h4>Our Sponsors</h4>
+			<div class="sponsor-tile">
+				<img src="" alt="Sponsor Here">
+				<img src="" alt="Sponsor Here">
+				<img src="" alt="Sponsor Here">
+				<img src="" alt="Sponsor Here">
+				<img src="" alt="Sponsor Here" id="big-sponsor">
+			</div>
+		</div>
 		<footer>
 			<div class="content-wrapper">
 					<div class="spacer"></div>
-					<section class="content-pod">
-						<div class="heading"><h2>About Us</h2></div>
-						<div class="text-80"><p>Our vision is for all families living and/or working in Nassau County to have access to quality child care and early learning that fosters successful growth and development for every child.</p></div>
-					</section>
 					<section class="content-pod">
 						<div class="heading"><h2>E-News</h2></div>
 						<div class="text-50">
@@ -385,7 +308,7 @@
 							</form>
 						</div>
 					</section>
-					<section class="content-pod">
+<!-- 					<section class="content-pod">
 						<div class="heading"><h2>Our Partners</h2></div>
 						<div class="text-80">
 							<a href="http://www.unitedway.org/" target="_blank"><img src="./home_files/united-way.png" alt="United Way" style="padding-right:20px;vertical-align:top;padding-bottom:5px;float:left;"></a>
@@ -394,7 +317,7 @@
 							<a href="http://www.childcareaware.org/" target="_blank"><img src="./home_files/child-aware-of-america.png" alt="Child Aware of America" style="padding-right:25px;vertical-align:top;float:left;"></a>
 							<a href="http://www.nassauboces.org/pre-k" target="_blank"><img src="./home_files/boeces.png" alt="Nassau BOECES" style="padding-right:25px;vertical-align:top;float:left;"></a>
 						</div>
-					</section>
+					</section> -->
 				<div class="spacer"></div>
 				<section class="quick-links">
 					<div style="position: relative; width:150px;float:left;">
