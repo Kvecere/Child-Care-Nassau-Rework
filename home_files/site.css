@@ -198,7 +198,7 @@ h5 a:link, h5 a:visited, h5 a:active{
 div#hero{
     height:750px;
     width:100%;
-    background-image:url(https://images.pexels.com/photos/160688/family-toddler-hapy-happy-160688.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=1080&w=1920);
+    background-image:url(family-toddler-hapy-happy-160688.jpeg);
     background-attachment:fixed;
     background-position:center;
     background-repeat:no-repeat;
@@ -218,6 +218,7 @@ div#hero{
 #mission-statement{
     background-color:#0A6CB1;
     padding:40px 10%;
+    margin-bottom:20px;
 }
 #mission-statement h3, #mission-statement p{
     color:white;
@@ -477,14 +478,22 @@ a.return:hover{
     outline: inline solid 1px; 
     border: solid 1px black;    
 }
-.sponsors{
-    min-height: 384px;
+.sponsors{min-height: 384px;}
+
+.sponsors h4{
+    text-align:center;
+    margin:20px 0 40px;
+    color:black;
+    font-size:24px;
 }
+
 .sponsors .sponsor-tile{
-    width:20%;
-    padding-bottom:20%;
+    width:calc(25% - 3px);
+    padding-bottom:calc(25% - 3px);
     height:0;
-    background-color:aquablue;
+    background-color:rgba(255,108,0,0.6);
+    display:inline-block;
+    margin:0;
 }
 footer{
     display: block;
@@ -729,7 +738,7 @@ section.feature .feature-useful-link-item{
     list-style-type:none;
     display:block;
     height:46px;
-    padding:4px;
+    padding:7px;
     line-height: 46px;
     text-align:left;
 }
