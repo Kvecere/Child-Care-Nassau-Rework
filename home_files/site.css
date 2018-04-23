@@ -168,26 +168,24 @@ ul li:hover a{
     visibility: hidden;
 }
 h1, h2, h3, h4, h5, h6{
-    color: #666;
     margin-bottom: 0;
     padding-bottom: 0;
-    font-family: "Ubuntu" , "Segoe UI" , Verdana, Helvetica, Sans-Serif;
 }
 h1{
     color: #0961B1;
-    font-size: 1.5em;
-    line-height: 2em;
+    font-size: 21px;
+    line-height: 28px;
 }
 h2{
-    font-size: 1.75em;
-    line-height: 2em;
+    font-size: 24.5px;
+    line-height: 28px;
 }
 h3{
-    font-size: 1.2em;
-    line-height: 1.75em;
+    font-size: 16.8px;
+    line-height: 24.5px;
 }
-h4{font-size: 1.1em;}
-h5, h6{font-size: 1em;}
+h4{font-size: 15.4px;}
+h5, h6{font-size: 12px;}
 h5 a:link, h5 a:visited, h5 a:active{
     padding: 0;
     text-decoration: none;
@@ -209,23 +207,55 @@ div#hero{
 #vision-statement{
     width:40%;
     min-height:75px;
-    background-color:rgba(245,245,245,0.85) ;
+    background-color:rgba(245,245,245,0.85);
     display:inline-block;
     text-align:center;
     border-radius:4px;
     margin-top:575px;
 }
-#mission-statement{
-    background-color:#0A6CB1;
+.banner{
     padding:40px 10%;
     margin-bottom:20px;
+    color:white;
+    min-height:125px;
 }
-#mission-statement h3, #mission-statement p{
+#mission-statement{
+    background-color:#0A6CB1;
+    text-align:center;
+}
+
+#banner h3, #banner p{
     color:white;
     text-align:center;
 }
 
+#social-media{
+    background-color:rgba(140,208,255)
+}
 
+#social-media p, #social-media .social-media-buttons, #social-media .registration-banner{
+    display:inline-block;
+}
+.social-media-buttons{
+    font-size:36px;
+    line-height:125px;
+    float:left;
+}
+.social-media-buttons i{
+    color:white;
+}
+
+#social-media p{
+    vertical-align: middle;
+    width:calc(100% - 320px - 113px - 40px);
+    margin:0;
+    padding: 55px 20px 0 20px;
+}
+
+#social-media .registration-banner{
+    float:right;
+    line-height:125px;
+}
 /* main layout
 ----------------------------------------------------------*/
 
@@ -478,16 +508,26 @@ a.return:hover{
     outline: inline solid 1px; 
     border: solid 1px black;    
 }
-.sponsors{min-height: 384px;}
+#sponsors{
+    min-height: 384px;
+    padding:0px 15% 81px;
+    box-shadow:inset 0px 12px 12px #d6d6d6,inset 0 -12px 12px #d6d6d6;
+}
 
-.sponsors h4{
+#sponsors h4{
     text-align:center;
-    margin:20px 0 40px;
+    padding:20px 0 40px;
+    margin:0;
     color:black;
     font-size:24px;
 }
 
-.sponsors .sponsor-tile{
+#sponsors #sponsors-container{
+    padding: 0;
+    margin:0;
+}
+
+#sponsors .sponsor-tile{
     width:calc(25% - 3px);
     padding-bottom:calc(25% - 3px);
     height:0;
@@ -502,11 +542,10 @@ footer{
     font-size: 0.9em;
     text-align: center;
     padding: 0px;
-}
-footer .content-wrapper{
     background-color: #0961B1;
     min-height: 300px;
 }
+
 footer .footer-text{
     text-align: center;
     width:100%;
@@ -522,16 +561,11 @@ footer a.footer:hover{
     text-decoration: underline;
 }
 footer .content-pod{
-    clear:both;
-    display:block; 
-    color:#333; 
-    width:95%; 
-    min-height:50px; 
-    height:auto; 
-    border-radius:8px; 
-    background-color:#fff; 
-    padding:5px 5px 5px 5px;
-    margin-top:10px; 
+    color:black;
+    min-height:150px; 
+    height:auto;  
+    background-color:rgba(140,208,255); 
+    padding:5px 5px 5px 5px; 
     margin-left:auto; 
     margin-right:auto;    
     overflow:auto;
@@ -681,9 +715,10 @@ section.feature img{
 }
 .feature p{
     display:inline-block;
-    width:calc(95% - 203px - 126px);
+    width:calc(95% - 203px - 182px);
     height:auto;
     margin:0px;
+    padding-right: 40px;
     vertical-align:middle;
 }
 section.feature br{
@@ -931,10 +966,8 @@ label.checkbox{
 }
 input, textarea{
     border: 1px solid #e2e2e2;
-    border-radius: 5px;
     background: #fff;
-    color: #333;
-    font-size: 1.2em;
+    font-size: 16px;
     margin: 5px 0 10px 0;
     padding: 5px;
     width: 100%;
@@ -956,12 +989,9 @@ input[type="submit"], input[type="button"], button{
     background-color: #ff6600;
     border: 1px solid #ccc;
     cursor: pointer;
-    font-size: 1em;
     font-weight: 600;
     padding: 7px;
-    margin: 10px 0 10px 0;
     min-width: 100px;
-    width: auto;
 }
 a.btn{
     margin-top: 2px;
