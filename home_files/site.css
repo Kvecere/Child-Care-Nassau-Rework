@@ -1,4 +1,4 @@
-html{
+﻿html{
     background-color: #fff;
     margin: 0;
     padding: 0;
@@ -29,7 +29,7 @@ nav{
     overflow:hidden;
     height:inherit;
     float: right;
-    width: calc(100% - 300px);
+    width: calc(100% - 225px);
     text-align: center; 
 }
 nav .nav-dropdown, #donate-nav-button{
@@ -48,13 +48,13 @@ nav .nav-dropdown, #donate-nav-button{
     float:right;
     display:inline-block;
     color:white;
-    padding:29.5px 0;
+    padding:22px 0 16px;
     font-size:18px;
     border-right:1px solid #0A6CB1;
 }
 .nav-dropdown>a{
     height:80px;
-    line-height:80.5px;
+    line-height:60px;
     padding:0px;
     margin:0px;
     width:160px;
@@ -71,7 +71,7 @@ header nav ul {
 }
 ul li.nav-dropdown>a{
     margin:0px;
-    height:80px;
+    height:60px;
     color: #fff;
     display:block;
     width:160px;
@@ -91,7 +91,7 @@ ul li:hover a{
 /*#more{display:none;}*/
 
 .nav-subcategory {
-    margin-top:80px;
+    margin-top:59px;
     float:left;
     display: none;
     position: absolute;
@@ -215,7 +215,6 @@ div#hero{
 }
 .banner{
     padding:40px 10%;
-    margin-bottom:20px;
     color:white;
     min-height:125px;
 }
@@ -230,7 +229,8 @@ div#hero{
 }
 
 #social-media{
-    background-color:rgba(140,208,255)
+    background-color:#0A6CB1;
+    text-align:center;
 }
 
 #social-media p, #social-media .social-media-buttons, #social-media .registration-banner{
@@ -282,10 +282,11 @@ div#hero{
     width: auto\9; /* ie8 */
     max-width: 100%;
 }
-header{margin: 0 0 0 0;
+header{
+    margin: 0 0 0 0;
     width: 100%;
-    height: 80px;
-    background-color: white;
+    height: 59px;
+    color: white;
     border-bottom:1px solid #0A6CB1;
     position:absolute;
     top:0;
@@ -302,12 +303,10 @@ header .content-wrapper{
 .content-header{display: block;}
 header .logo{
     background-color:white;
-    width: 282px !important;
-    height:80px !important;
-    max-height:80px !important;
+    width: 220px;
+    height:59px;
     float: left;
     vertical-align:middle;
-    margin: 0px;
 }
 header .member-login{
     float: right;
@@ -509,8 +508,7 @@ a.return:hover{
     border: solid 1px black;    
 }
 #sponsors{
-    min-height: 384px;
-    padding:0px 15% 81px;
+    padding:0px 15%;
     box-shadow:inset 0px 12px 12px #d6d6d6,inset 0 -12px 12px #d6d6d6;
 }
 
@@ -522,8 +520,8 @@ a.return:hover{
     font-size:24px;
 }
 
-#sponsors #sponsors-container{
-    padding: 0;
+#sponsors-container{
+    padding: 0 0 81px 0;
     margin:0;
 }
 
@@ -535,13 +533,19 @@ a.return:hover{
     display:inline-block;
     margin:0;
 }
+
+.sponsor-tile img{
+    max-width:330px;
+    width:100%;
+    padding-top:21%;
+}
 footer{
     display: block;
     clear: both;
     color: #fff;
     font-size: 0.9em;
     text-align: center;
-    padding: 0px;
+    padding: 30px 2.5% 0;
     background-color: #0961B1;
     min-height: 300px;
 }
@@ -550,7 +554,10 @@ footer .footer-text{
     text-align: center;
     width:100%;
 }
-footer h2{color: #fff;}
+footer h2{
+    margin:0;
+    text-align:center;
+}
 footer a.footer{
     color: #fff;
     text-decoration: none;
@@ -560,6 +567,7 @@ footer a.footer:hover{
     color: #ff6600;
     text-decoration: underline;
 }
+footer a, footer strong{line-height:28px;}
 footer .content-pod{
     color:black;
     min-height:150px; 
@@ -610,33 +618,34 @@ footer .content-pod .heading h2{color: #333;}
     vertical-align:middle;
 }
 footer .quick-links{
-    display:block;
-    margin-left: 25px;
+    display:inline-block;
     text-align: left;
     float: left;
-    width: 35%;
+    width: 30%;
+    padding-top:55px;
 }
 footer .contact-us{
     top:0px;
-    display:block;
+    display:inline-block;
     margin-left: 20px;
     padding-left:30px;
     text-align: left;
     float: left;
-    width: 33%;
-    margin: auto auto;
+    width: 30%;
+    margin: auto;
 }
+
+
 footer .footer-contact-column{
     padding:5px;
     float:left;
 }
 footer .map{
-    color:White;
-    display:block;
+    color:white;
+    display:inline-block;
     top:0px;
-    padding: 5px 5px 5px 5px;
-    float: left;
-    width: 25%;
+    float: right;
+    width: 30%;
 }
 footer .copyright{
     clear:both;
@@ -710,7 +719,7 @@ section.feature .feature-text{
 }
 section.feature img{
     text-align: center;
-    padding:92px 60px 91px 25px;
+    padding:92px 30px 91px 25px;
     vertical-align:middle;
 }
 .feature p{
@@ -719,7 +728,6 @@ section.feature img{
     height:auto;
     margin:0px;
     padding-right: 40px;
-    vertical-align:middle;
 }
 section.feature br{
     clear:both;
@@ -1011,6 +1019,7 @@ a.btn:hover{
     height: 30px;
     background-color: #c4291e;
     border-color: #b3251b;
+    font-weight:bold !important;
 }
 a.btn-course-registration{
     font-size:1em;
